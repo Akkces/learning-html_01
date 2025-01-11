@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <title>Akcessible - Nous contacter</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ma description">
+    <meta name="keywords" content="Motion Design, 3D Designer, 3D Artist">
+    <meta name="author" content="Akces">
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="menu.html">Nos Menus</a></li>
+            <li><a href="./menus/entree1.html">Entree 1</a></li>
+        </ul>
+    </nav>
+
+    <h1>Nous contacter</h1>
+
+    <form action="menu.html">
+        <fieldset>
+            <legend>Nous contacter</legend>
+
+            <div>
+                <label for="emailinput">Email</label>
+                <input type="text" name="email" id="emailinput" placeholder="Votre Email" autofocus maxlength="8" required>
+            </div>
+
+            <div>
+                <label for="nameinput">Prenom</label>
+                <input type="text" name="prenom" id="nameinput" placeholder="Votre Prenom" required>
+            </div>
+
+            <div class="sexe_case">
+                <label id="sexe">Sexe</label>
+                    <select name="sexe" id="sexe">
+                        <option value="select">Select your sexe</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                    </select>
+            <div>
+                <div>
+                    <label>Choose Animal:</label>
+                </div>
+                <select name="animal" id="animal">
+                    <option value="select">Select your Animal</option>
+                        <optgroup label="Earth">
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </optgroup>
+                        <optgroup label="Water">
+                            <option value="e">E</option>
+                            <option value="f">F</option>
+                        </optgroup>
+                </select>
+            </div>
+
+
+
+
+
+
+                <div>
+                    <label for="fileinput">Piece jointe</label>
+                    <input type="file" name="file" id="fileinput">
+                </div>
+                <div>
+                    <label for="descriptioninput">Description du projet</label>
+                    <textarea name="description-projet" id="descriptioninput" placeholder="Votre message" cols="100" rows="10"></textarea>
+                </div>
+            <div>
+                <label><input type="checkbox" name="cgu" required>J'accepte les conditions</label>
+            </div>
+            <div>
+                <input type="submit" value="submit form">
+                <input type="reset" value="Supprimer">
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
