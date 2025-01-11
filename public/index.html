@@ -9,6 +9,22 @@
     <meta name="description" content="Ma description">
     <meta name="keywords" content="Motion Design, 3D Designer, 3D Artist">
     <meta name="author" content="Akces">
+    {
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "public": true,
+  "builds": [
+    { "src": "public/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/public/index.html" },
+    { "src": "/menu", "dest": "/public/menu.html" },
+    { "src": "/contact", "dest": "/public/contact.html" },
+    { "src": "/menus/entree1", "dest": "/public/menus/entree1.html" },
+    { "src": "/static/(.*)", "dest": "/public/static/$1" }
+  ]
+}
 
 </head>
 <body>
